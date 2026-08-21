@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #885200;
+  --color-primary-container: #fa9a00;
+  --color-on-primary-container: #623a00;
+  --color-secondary: #8127cf;
+  --color-secondary-container: #9c48ea;
+  --color-tertiary: #006e2d;
+  --color-tertiary-container: #48c769;
+  --color-background-canvas: #f3f4f6;
+  --color-surface-card: #ffffff;
+  --color-surface-container: #e9edff;
+  --color-surface-container-high: #e1e8fd;
+  --color-surface-container-low: #f1f3ff;
+  --color-surface-container-lowest: #ffffff;
+  --color-on-surface: #141b2b;
+  --color-on-surface-variant: #544434;
+  --color-text-muted: #6b7280;
+  --color-border-subtle: #e5e7eb;
+  --color-error: #ef4444;
+  --color-warning: #f59e0b;
+}
+
+@layer base {
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: var(--color-background-canvas);
+    color: var(--color-on-surface);
+  }
+}
+
+.bento-card {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease-in-out;
+}
+
+.bento-card:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+}
